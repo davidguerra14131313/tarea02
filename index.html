@@ -21,7 +21,7 @@
         </div >
         <div id="usuariocabecera">
 
-        <img  class ="perfil" src="perfil.ico" alt="perfil de usuario" width="80" height="80px"> <span><label for>usuario 1</label></span>
+        <img  class ="perfil" src="perfil.ico" alt="perfil de usuario" "> <span><label for>usuario 1</label></span>
         </div>
         </header>
         
@@ -36,7 +36,7 @@
         <input type="search" id="inputbuscador" placeholder="Buscar">
 
         <button id="botonbuscar"  >
-        <input type="image"  src="icosearch.ico" width="15px" height="15px">
+        <input type="image" id="imgbuscar" src="icosearch.ico" >
         <label for="textoboton">buscar</label>
         </button>
     </nav>
@@ -123,12 +123,12 @@
             <input type="checkbox"  id="impuesto" value="acepto"  title="si desea continuar tendra que aceptar termino"required><br>
 
             <label for="foto">Foto</label>
-            <input type="file"  id="foto"   accept=" image/jpeg, image/png" title="solo aceptan imagens de tipo de archivo: jpg , png" required><span class="validity"></span><!--accept=".jpg,.png"--> 
+            <input type="file"  id="foto"   accept=" image/jpeg, image/png" title="solo aceptan imagens de tipo de archivo: jpg , png" required><span class="validity"></span>
             <small>(solo acepta formatos jpeg o png)</small><br>
 
             
             <label for="descripcion">Descripción: </label>
-            <textarea id="area de texto"  widht="100px" height="80px"></textarea><br><br> <!--resize:none en css-->            
+            <textarea id="areatexto"  cols="23" rows="3"></textarea><br><br> <!--resize:none en css-->            
             <button type="submit"  id="grabar" >grabar</button>
             <button type="reset" id="limpiar">limpiar</button>
 
