@@ -1,0 +1,266 @@
+body{
+    display: grid;
+    justify-content: stretch;
+    
+    grid-template-columns: 1fr,1fr,1fr;
+    grid-template-columns: 24% 56% 20%;
+    grid-template-rows: 15% 8% 76% 10%;
+    
+    margin: 1%;
+    gap: 5px;
+}
+ 
+header
+{   
+    justify-content: stretch;
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 1;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 40% 40% auto; 
+    background-color: blue;
+    color: white;
+    font-family: "verdana,Geneva,san-serif";
+    border-bottom: solid 3px black;
+    border-top: solid 3px black;
+    
+}
+#h1cabecera
+{   
+   justify-self: center;
+    grid-column: 2;
+    
+    justify-self: start;
+    border-bottom: cornsilk  1px solid;
+}
+
+#usuariocabecera
+{
+    grid-column: 3;
+    justify-self: center;
+    vertical-align: bottom;
+    align-self: center;
+    justify-content: center;
+    padding-right: 5px;
+}
+.perfil
+{
+
+    border: solid black;
+    clip-path: circle(43.9% at 48% 50%);
+    align-content: end;
+    font-size: 10px;
+    font-weight: 200px;
+    opacity: 60%;
+}
+nav
+{
+    
+    background-color: darkcyan;
+    grid-column: 1/4;
+    
+    text-align: end;
+    align-self:center ;
+    align-items: stretch;
+    padding: 12px;
+    border-bottom: solid 3px black;
+    border-top: solid 3px black;
+
+}
+#botonbuscar
+{
+    width: 60px;
+    height: 40px;
+    vertical-align:  50%;
+}
+
+main
+{
+    display: grid;
+    border: solid 1.5px black;
+    grid-column: 1; /*xD*/
+    
+    justify-content: stretch;
+    justify-items: stretch;
+    background-color:lightblue;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: solid 3px black;
+    
+}
+
+main section
+{
+    display: grid;
+    text-align: center;
+    
+    
+}
+
+main section h1
+{   
+    
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+    background-color: darkcyan;
+    border-bottom: solid 3px black;
+    border-top: solid 3px black;
+        
+
+}
+main section button
+{
+    display: grid;
+    justify-items: center;
+   
+    margin-left: 2%;
+    margin-right: 2%;
+    border: solid 1px black;
+    border-radius:  22px;
+    
+}
+aside
+{   padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+    display: grid;
+    align-content:stretch;
+    grid-column: 2/4;
+    background-color:lightblue;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    border: solid 1.5px black;
+   
+    font-size: 19px;
+    border-bottom: solid 3px black;
+    border-top: solid 3px black;
+    display:inline-block;
+
+}
+aside form label 
+{
+display: inline-block;
+ position:relative;
+ width: 130px;
+ margin-left: 1.5%;
+
+ 
+    
+}
+aside form input
+{
+  margin-left: 4%;
+    position:relative;
+}
+
+input:invalid + span::after {
+    position: relative; content: '✖';
+    padding-left: 10px;
+    
+    width: 100px;
+    font-size: 1rem;
+  }
+  
+  input:valid + span:after {
+    position: relative;
+    content: '✓';
+    width: 100px;
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+
+  input:required:focus:valid {
+    background-color:lightgreen;
+    background-size: 1%px;
+    border-color: green;
+  }
+  input:required:focus:invalid {
+    background-color:lightsalmon;
+    background-size: 1%px;
+    border-color: red;
+  }
+aside form select
+{
+    margin-left: 4%;
+    position:relative;
+
+}
+aside form textarea
+{
+    margin-left: 4%;
+    position:relative;
+}
+aside form button
+{
+    margin-left: 1.5%;
+    position:relative;
+    font-size: 18px;
+    border-radius:  5px;
+}
+aside form small
+{
+    color: brown;
+    font-weight: bold;
+}
+fieldset
+{
+    
+    height: 98%;
+}
+
+form input
+{
+    margin: 9px;
+}
+
+footer
+{
+
+    display: grid;
+    grid-column: 1/4;
+    justify-content: stretch;
+    justify-self: stretch;
+    background-color: cornflowerblue;
+    color: black;
+    font-size: 15px;
+    border-bottom: solid 3px black;
+    border-top: solid 3px black;
+}
+#quehacemos
+{
+    display: grid;
+  align-self: center;
+  justify-self: center;
+    grid-column: 1/2;
+    
+}
+#quehacemos:hover
+{
+    background-color: rgb(228, 240, 240);
+}
+#enlaces
+{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-column: 2/3;
+    
+}
+#enlaces:hover
+{
+    background-color: rgb(228, 240, 240);
+}
+#contactanos
+{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-column: 3/4;
+    
+}
+#contactanos:hover
+{
+    background-color: rgb(228, 240, 240);
+}

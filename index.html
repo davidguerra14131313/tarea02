@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" >
+    <link rel="icon" type="image/icon" href="icon1.ico">
+    
+    
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <header>    
+        <div id="h1cabecera">
+        
+        <h1 >Sistema integrado de gestión</h1> 
+    
+        </div >
+        <div id="usuariocabecera">
+
+        <img  class ="perfil" src="perfil.ico" alt="perfil de usuario" width="80" height="80px"> <span><label for>usuario 1</label></span>
+        </div>
+        </header>
+        
+       
+    
+    
+    
+    
+
+    <nav>
+        <label for="buscador">Buscar en la web</label>
+        <input type="search" id="inputbuscador" placeholder="Buscar">
+
+        <button id="botonbuscar"  >
+        <input type="image"  src="icosearch.ico" width="15px" height="15px">
+        <label for="textoboton">buscar</label>
+        </button>
+    </nav>
+    <main>
+        <section>
+
+            <h1 for="menu" id="labelmenu">Menú</h1>
+
+            <button id="agregar">
+                <label for="agregar">Agregar producto</label><br>
+                <input type="image" src="agregar5.ico" >
+            </button><br>
+
+            <button id="editar">
+            <label for="editar">administrar categorias</label><br>
+            <input  type="image" src="editar.ico">
+            </button><br>
+
+            <button id="basededatos">
+                <label for="base de datos">Extensiones</label><br>
+                <input type="image" src="basededatos.ico">
+            </button><br>
+
+            <button id="administrar">
+                <label for="administrar">Administrar pagos</label><br>
+                <input type="image" src="administrar.ico">
+            </button><br>
+
+        </section>
+    </main>
+
+    <aside>
+        <form>
+        <fieldset>
+            <legend>Agregar producto</legend>   
+            <form name="validarcodigo">
+            <label for="codigo">Codigo*: </label>
+            <input type="tel" pattern="[1-9]{6}"  id="codigo"placeholder="ingrese numeros" title="solo  acepta 6 digitos numericos" required>
+            <span class="validity"></span>   
+            
+            <button type="submit"  id="validar"  name="validarcodigo" >validar</button><br>
+            </form>
+            <form>
+            <label for="nombre">Nombre*: </label>
+            <input type="text" id="nombre" pattern="[a-zA-Z1-9]{1,100}" placeholder="solo letras y numeros" title="ingrese nombre y numeros,maximo 100 caracteres"required>
+            <span class="validity"></span><br>            
+            
+            <label for="abreviatura">Abreviatura</label>
+            <input type="text" id="abreviatura" pattern="[a-z]{10}" placeholder="solo letras" title="solo se puede aceptar letras, maximo 10 caracteres "required>
+            <span class="validity"></span><br>
+
+            <label for="categoria">Categoría*: </label>
+            <select name="categoria" id="categoria" title="elija una opción" required>
+                <option value="panes especiales">panes especiales</option>
+                <option value="lacteos">lácteos</option>
+                <option value="pasteles">pasteles</option>
+                <option value="lista cerrada de elementos">lista cerrada de elementos</option>
+            </select><br>
+            
+            <label for="ruc">Ruc Proveedor*: </label>
+            <input type="tel" id="ruc" pattern="[0-9]{10}" title="ingrese su ruc, solo acepta 10 digitos"placeholder="solo números"required><span class="validity"></span><br>
+            
+            <label for="precio">Precio*: </label>
+            <input type="number" id="precio" step="0.1"required><span class="validity"></span><br>
+            
+            <label for="coloretiqueta">Color de etiqueta</label>
+            <input type="color" id="coloretiqueta"> <br>
+            
+            <label for="fecha">Fecha*: </label>
+            <input type="date" id="fecha" title="seleccione una fecha"required><br>
+            
+            <label for="estado">Estado*: </label>
+
+            <input type="radio" name="radioestado" id="activo" value="activo" title="selecciona una de las opciones"required>
+            <label for="activo">Activo</label>
+            
+            <input type="radio" id="suspendido" name="radioestado" value="suspendido" title="selecciona una de las opciones">
+            <label for="supendido">suspendido</label>
+            
+            <input type="radio" name="radioestado" id="debaja" value="debaja" title="selecciona una de las opciones" required>
+            <label for="debaja">De baja</label><br>
+
+            <label for="impuesto">Afecto a impuesto* :</label>
+            <input type="checkbox"  id="impuesto" value="acepto"  title="si desea continuar tendra que aceptar termino"required><br>
+
+            <label for="foto">Foto</label>
+            <input type="file"  id="foto"   accept=" image/jpeg, image/png" title="solo aceptan imagens de tipo de archivo: jpg , png" required><span class="validity"></span><!--accept=".jpg,.png"--> 
+            <small>(solo acepta formatos jpeg o png)</small><br>
+
+            
+            <label for="descripcion">Descripción: </label>
+            <textarea id="area de texto"  widht="100px" height="80px"></textarea><br><br> <!--resize:none en css-->            
+            <button type="submit"  id="grabar" >grabar</button>
+            <button type="reset" id="limpiar">limpiar</button>
+
+        </form>
+        </form>
+        </fieldset>
+
+    </aside>
+<footer>
+    <div id="quehacemos">
+        <a href="quehacemos.html">que hacemos?</a>
+    </div>
+    <div id="enlaces">
+        <a href="enlaces.html">Enlaces principiantes</a>
+    </div>
+    <div id="contactanos">
+        <a href="contactanos.html" >Contáctanos</a>
+    </div>
+</footer>
+</body>
+</html>
